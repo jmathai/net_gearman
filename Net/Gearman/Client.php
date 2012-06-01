@@ -131,6 +131,18 @@ class Net_Gearman_Client
         return $conn;
     }
 
+
+    /**
+     * Get a count of connections
+     *
+     * @return int Number of connections
+     */
+    public function getConnectionCount()
+    {
+      return count($this->conn);
+    }
+
+
 	/**
 	 * Gets the current status of a Task
 	 *
